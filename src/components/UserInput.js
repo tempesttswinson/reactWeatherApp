@@ -3,17 +3,14 @@ import React, {
   useState,
   useEffect
 } from "react";
-// import Button from "react-bootstrap/Button";
-// import Input from "react-bootstrap/Input";
+import Button from 'react-bootstrap/Button';
 
 
-export default function UserInput() {
-  return ( <
-    div >
-    <
-    input placeholder = "Enter Zip Code" / >
-    <
-    button type = "submit" > Submit < /button>  <
-    /div>
+export default function UserInput(props) {
+  return (
+    <>
+      <input placeholder="Enter Zip Code" />
+      <button onClick={props.getWeather} > Submit </button>
+    </>
   )
 }
