@@ -10,7 +10,7 @@ export default function UserInput(props) {
   return (
     <>
       <input placeholder="Enter Zip Code" />
-      <button onClick={props.getWeather} > Submit </button>
+      <button onClick={() => props.getWeather()} > Submit </button>
     </>
   )
 }

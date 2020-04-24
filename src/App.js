@@ -8,8 +8,9 @@ const API_KEY = '678ba9df227448b5ef0a9f4ff586b675';
 
 export default function App() {
   const getWeather = async () => {
-    const api_call = await fetch('api.openweathermap.org/data/2.5/weather?zip=28273&appid=' + API_KEY + '&units=imperial');
+    const api_call = await fetch('https://api.openweathermap.org/data/2.5/weather?zip=28273&appid=' + API_KEY + '&units=imperial');
 
+    console.log(api_call);
     const weather = await api_call.json();
 
     console.log(weather);
@@ -17,7 +18,7 @@ export default function App() {
 
   return (
     <div >
-      <UserInput onClick={getWeather} />
+      <UserInput getWeather={getWeather} />
     </div>
   );
 }
