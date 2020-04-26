@@ -1,5 +1,5 @@
 body {
-  /* background-image: url(./images/angela-compagnone-XSUvsYl_LrE-unsplash.jpg); */
+  /* background-image: url(images/angela-compagnone-XSUvsYI_LrE-unsplash.jpg);  */
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -26,8 +26,8 @@ button {
   opacity: 88%;
 }
 
-.overall_div {
-  padding: 150px;
+p{
+  margin: 5px auto;
 }
 
 /* .clear {
