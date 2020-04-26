@@ -51,22 +51,25 @@ export default function App() {
 
   return (
     <div >
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbarColor02">
-        <p class="navbar-brand">Weather In Your City</p>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark d-flex justify-content-center align-items-center" id="navbarColor02">
+        <h1 class="navbar-brand">Weather In Your City</h1>
       </nav>
-      <h1>Weather In Your City</h1>
-      <input type="text" placeholder="Enter Zip Code" onChange={(e) => setInput(e.target.value)} />
-      <button onClick={getWeather} className="badge badge-dark"> Submit </button>
-      {city ? (
-        <div>
-          <p>{city}</p>
-          <Moment format="dddd MMMM Do YYYY, h:mm a z" tz={timezone}></Moment>
-          <p>{temp} &deg;F</p>
-          <p>{desc}</p>
-          <img src={"https://openweathermap.org/img/wn/" + icon + "@2x.png"} alt={desc} />
-        </div>
-      ) : null}
-      <p>{error}</p>
+      <div className="d-flex justify-content-center align-items-center inputDiv">
+        <input type="text" placeholder="Enter Zip Code" onChange={(e) => setInput(e.target.value)} />
+        <button onClick={getWeather} className="badge badge-dark"> Submit </button>
+      </div>
+      <div className="d-flex justify-content-center align-items-center">
+        {city ? (
+          <div>
+            <p>{city}</p>
+            <Moment format="dddd MMMM Do YYYY, h:mm a z" tz={timezone}></Moment>
+            <p>{temp} &deg;F</p>
+            <p>{desc}</p>
+            <img src={"https://openweathermap.org/img/wn/" + icon + "@2x.png"} alt={desc} />
+          </div>
+        ) : null}
+        <p>{error}</p>
+      </div>
     </div>
   )
 }

@@ -1,5 +1,5 @@
 body {
-  /* background-image: url(images/angela-compagnone-XSUvsYI_LrE-unsplash.jpg);  */
+  /* background-image: url('./images/angela-compagnone-XSUvsYI_LrE-unsplash.jpg');  */
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -7,29 +7,16 @@ body {
 
 h1 {
   font-family: 'Merienda', cursive;
-  font-size: 45px;
+  font-size: 65px;
 }
 
 div {
   font-family: 'Bad Script', cursive;
   font-size: 25px;
 }
-
-button {
-  background-color: #ffc107;
+.inputDiv{
+  margin-top: 35px;
 }
-
-.jumbotron {
-  width: 750px;
-  height: 550px;
-  background-color: #e83e8c;
-  opacity: 88%;
-}
-
-p{
-  margin: 5px auto;
-}
-
 /* .clear {
   background-image: url(images/sunny.jpg);
 }
